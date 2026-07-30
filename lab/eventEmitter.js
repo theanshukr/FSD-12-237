@@ -1,8 +1,8 @@
-
+import {EventEmitter} from "node:events";
 const login=(name)=>{
     console.log(`Welcome ${name} logged in successfully`);
 }
-const strat=()=>{
+const start=()=>{
     console.log("Starting the application");
 }
 const working=(name)=>{
@@ -12,5 +12,7 @@ const checkout=(name)=>{
     console.log(`${name} logged out`);
 
 }
-
-login("Alec");
+const task=new EventEmitter();
+task.on('start',start)
+task.on("greet", login);
+task.emit("greet",'Alec')
