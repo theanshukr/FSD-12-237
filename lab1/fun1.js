@@ -9,9 +9,10 @@ const f3=()=>{
 }
 function main(){
     console.log("main");
-    f1()
+    setTimeout(f1,0)
     f2()
-    f3()
+    setImmediate(f3)
     console.log("end")
 }
+
 main()
