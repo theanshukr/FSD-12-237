@@ -21,4 +21,9 @@ priority-nexttrick,promise,setimmediate,settimeout
 - module.js(,.js)->follow modular approach->import
 priority(promise,nexttick,setimmediate/settimeout
 )
-
+## fs module directly communicate with os rather than browser
+the coomon operation of file or folder are 
+1. file->writeFile,readFile,appendFile
+2. folder->mkdir,md,readdir,,rmdir
+3. File method->stack,lstack,rstack
+## all function are promise so it must be call with await each
