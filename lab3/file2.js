@@ -10,6 +10,8 @@ const writeData=async()=>{
     }
 };
 
+
+
 const readData=async(filename)=>{
     try{
         const content=await readFile(filename, "utf8");
